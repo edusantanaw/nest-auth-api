@@ -1,3 +1,3 @@
-export abstract class EncrypterService {
+export abstract class Encrypter {
   abstract genHash: (password: string) => Promise<string>;
 }
