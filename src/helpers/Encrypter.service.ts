@@ -1,6 +1,9 @@
 import { genSalt, hash } from 'bcrypt';
+import { IEncrypter } from 'src/core/abstract/encrypter';
+import { Injectable } from '@nestjs/common';
 
-export class Encrypter {
+@Injectable()
+export class Encrypter implements IEncrypter {
   private readonly rounds: number = 10;
   async genHash(password: string): Promise<string> {
     const salt = await genSalt(this.rounds);
