@@ -11,4 +11,4 @@ import { Encrypter } from './Encrypter.service';
   ],
   exports: [IEncrypter],
 })
-export class EncrypterModule {}
+export class HelperModule {}
