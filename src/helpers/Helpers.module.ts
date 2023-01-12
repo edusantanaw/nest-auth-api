@@ -15,6 +15,6 @@ import { GenerateToken } from './GenerateToken.service';
       useClass: GenerateToken,
     },
   ],
-  exports: [IEncrypter, GenerateToken],
+  exports: [IEncrypter, IGenerateToken],
 })
 export class HelperModule {}
